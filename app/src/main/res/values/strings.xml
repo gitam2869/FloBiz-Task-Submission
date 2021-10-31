@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FloBiz</string>
+
+    <string name="server_error_message">Server error, pleas try again.</string>
+    <string name="internet_not_available">Please check your internet connection, and try again.</string>
+    <string name="data_not_available">Data not available</string>
+    <string name="posted_on">Posted on :</string>
+    <string name="no_browser_found">No Browser found in your phone</string>
+    <string name="refresh">Refresh</string>
+    <string name="search_here">Search here</string>
+    <string name="empty_search_data">Data is not available for %s</string>
+    <string name="stackoverflow_questions">Stackoverflow Questions</string>
+
+    <string name="loading">loading…</string>
+    <string name="average_view_count">Average View Count\n%f</string>
+    <string name="average_answer_count">Average Answer Count\n%f</string>
+
+    <string name="filter_task_not_finish">This task is pending.</string>
+
+</resources>

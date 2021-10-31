@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_question"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/layout_horizontal_small_margin"
+    android:layout_marginTop="@dimen/layout_vertical_small_margin"
+    android:elevation="0dp"
+    app:cardCornerRadius="@dimen/question_card_radius"
+    app:cardElevation="0dp"
+    app:rippleColor="@color/background_dark"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/primaryColor"
+    app:cardBackgroundColor="#123F6CE1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/layout_horizontal_medium_padding"
+        android:paddingVertical="@dimen/layout_vertical_medium_padding">
+
+        <TextView
+            android:id="@+id/tv_question_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/Text_80"
+            android:textSize="@dimen/text_title"
+            android:textStyle="bold"
+            tools:text="Question" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_vertical_small_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_profile_pic"
+                android:layout_width="@dimen/profile_pic_card_width"
+                android:layout_height="@dimen/profile_pic_card_height"
+                android:elevation="0dp"
+                app:cardBackgroundColor="@color/background_light"
+                app:cardCornerRadius="@dimen/profile_pic_card_radius"
+                app:cardElevation="0dp"
+                app:rippleColor="@color/transparent"
+                app:strokeColor="@color/Text"
+                app:strokeWidth="1dp">
+
+
+                <ImageView
+                    android:id="@+id/iv_profile_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tv_owner_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_horizontal_small_margin"
+                android:textColor="@color/Text"
+                android:textSize="@dimen/text_heading"
+                tools:text="Owner Name" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_posted_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_horizontal_small_margin"
+            android:layout_marginTop="@dimen/layout_vertical_small_margin"
+            android:gravity="end"
+            android:textColor="@color/Text_60"
+            android:textSize="@dimen/text_default"
+            tools:text="Posted on : 05-05-2021" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
